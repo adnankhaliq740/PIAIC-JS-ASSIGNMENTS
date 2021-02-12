@@ -23,7 +23,11 @@ let dobm = console.log("enter your dobm");
 let doby = prompt("enter your doby");
 console.log(`Hello ${name}, Good Morning`);
 console.log(`Your DOB is ${dobd},${dobm} ${doby}`);
-
-let years =new Date().getFullYear() - new Date().setTime(doby);
-let month =new Date().getMonth()
+let date = new Date();
+let years =date.getFullYear() - date.setTime(doby);
+console.log(years);
+let month = date.setTime(12) - date.setTime(2)
 console.log(month);
+let days= date.getDay(1999,10)
+console.log(days);
+// console.log(`You are ${years} years ${month} Month 10 Days 19 Hours 20 Minutes 25 Seconds old`);

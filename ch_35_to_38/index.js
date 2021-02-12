@@ -4,11 +4,6 @@
 //     Convert every first letter of the content in Capitalize case. inputValue="Cloud Native Computing" use Function
 //     print value in console.log() console.log(inputValue) | check result in browser console
 
-// Second Assignment
-
-//     User input value in Number through prompt Example value=5
-//     Factorialize a Number use Function
-//     print value in console.log() console.log(value); the result is 120
 
 // Understand this logic
 
@@ -29,6 +24,32 @@
 
 var inputValue="cloUd naTive computinG";
 
-function convertToUppercase(inputValue) {
+const toTitleCase = (inputValue) => {
+  return inputValue
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
+let result = toTitleCase(inputValue);
+console.log(result);
+
+
+
+// Second Assignment
+
+//     User input value in Number through prompt Example value=5
+//     Factorialize a Number use Function
+//     print value in console.log() console.log(value); the result is 120
+let num = Number(prompt("Enter Number"));
+let fact = num;
+function factorize(fact) {
   
+  for (i = 1; i <num ; i++) {
+    fact = fact *  i
+  }
+  return fact;
 }
+// factorize()
+console.log(factorize(fact));

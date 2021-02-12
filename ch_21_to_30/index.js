@@ -10,18 +10,16 @@
 
 
 
-// var num = Number(prompt("enter number"));
-// console.log(Math.ceil(num));
-// var text = "dummy text";
-// console.log(text[5]);
-// var slicedText = text.slice(0,5);
-// console.log(slicedText);
-// var newstr = "";
-// for (var i = slicedText.length -1; i >= 0; i--) {
-//   console.log(newstr);
-//   newstr += slicedText[i];
-// }
-// console.log(newstr);
+var num = Number(prompt("enter number"));
+console.log(Math.ceil(num));
+var text = "dummy text";
+var slicedText = text.slice(0,5);
+console.log(slicedText);
+var newstr = "";
+for (var i = slicedText.length -1; i >= 0; i--) {
+  newstr += slicedText[i];
+}
+console.log(newstr);
 
 
 
@@ -33,5 +31,12 @@
 
 var inputValue="cloUd naTive computinG";
 
+let capitalizeFirstLetter =(inputValue)=>{
+  return inputValue
+  .toLowerCase()
+  .split(' ')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ');
+};
 
-capitalizeFirstLetter();
+console.log(capitalizeFirstLetter(inputValue));
