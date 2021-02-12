@@ -28,6 +28,3 @@ let years =date.getFullYear() - date.setTime(doby);
 console.log(years);
 let month = date.setTime(12) - date.setTime(2)
 console.log(month);
-let days= date.getDay(1999,10)
-console.log(days);
-// console.log(`You are ${years} years ${month} Month 10 Days 19 Hours 20 Minutes 25 Seconds old`);
